@@ -56,18 +56,19 @@ a:active {color:#948f94;}
     background-color: rgb(114, 136, 56);
     position: relative;
     filter: drop-shadow(6px 9px 22px #77825E);
+    align-items: center;
 }
 
 
 /****************MENU HAMBURGUESA***************+*****/
 
 .main_title{
-    position:absolute;
+    /* position:absolute; */
     left: 0;
     top: 0;
     padding-top: 20px;
     padding-left: 30px;
-    /* font-family: tittle; */
+    font-family: tittle;
     font-size: 30px;
     margin-bottom: 20px;
     color: #dddddd;
@@ -110,37 +111,23 @@ nav{
     display: none;
 } 
 
-@media screen and (max-width: 800px) {
-    .topnav a {
-        display: none;
-    }
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 800px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-
-  } 
-
 /* ******TITULO******** */
 h1{
     text-align: center;
 }
+
+/***************SOMBRA DEBAJO BARRA NAVEGACIÓN*******************  */
+.slideshow-container {
+    -webkit-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    max-width: 1000px;
+    position: relative;
+    margin: 2em auto 0 auto;
+    border-radius: 1%;
+    margin-top: 42px;
+}
+
 /* *******************FOTO HERO SECTION**************************** */
 
 #imagen_inicio{
@@ -620,18 +607,34 @@ html{scroll-behavior: smooth;
         flex-direction: row;
         font-size: 2em;
     }
-/***************SOMBRA DEBAJO BARRA NAVEGACIÓN*******************  */
-    .slideshow-container {
-        -webkit-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
-        -moz-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
-        box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
-        max-width: 1000px;
-        position: relative;
-        margin: 2em auto 0 auto;
-        border-radius: 1%;
-        margin-top: 42px;
-    }
     
+@media screen and (max-width: 800px) {
+    .topnav a {
+        display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+  } 
+
 
     section{
         padding: 10px 0;
