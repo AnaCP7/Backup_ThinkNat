@@ -560,16 +560,22 @@ html{scroll-behavior: smooth;
         text-align: center;
     }
     .grid4{
-        /* display: grid;
-        grid-template-columns: 100%;
-        text-align: center; */
-
         flex-direction: column;
+        gap: 15px;
+    }
 
+    .gap{
+        padding-bottom: 25px;
     }
 
     .grid4 div{
         width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .grid4 div h3{
+        padding-bottom: 15px;
     }
 
     #inicio_scroll{
