@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
 }  
+
 body{ 
     font-family: "Hind", Sans-serif;
     font-size: 20px;
@@ -18,14 +19,19 @@ body{
     background-color: rgb(222, 220, 195);
     color: rgb(98, 93, 71);
     }
-
-a:link, a:visited, a:active {
-    text-decoration:none;
+@font-face {
+    font-family: tittle;
+    src: url(../fonts/ShadowsIntoLight-Regular.ttf);
 }
 
-a {color:#0a0909;}         /* Unvisited link  */
-a:visited {color:#0a0909;} /* Visited link    */
-a:hover {color:#948f94;}   /* Mouse over link */
+a:link,  a:active {
+    text-decoration:none;
+}
+/* a:visited */
+
+a {color:#ffffff;}         /* Unvisited link  */
+/* a:visited {color:#ffffff;} Visited link    */
+a:hover {color:#242b20;}   /* Mouse over link */
 a:active {color:#948f94;}
 
 
@@ -61,6 +67,10 @@ a:active {color:#948f94;}
     top: 0;
     padding-top: 20px;
     padding-left: 30px;
+    font-family: tittle;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #dddddd;
 }
 
 nav{
@@ -278,7 +288,7 @@ img {
 /* **********TEXTO INDEX**********++ */
 .col4 img {
     width: 100%;
-    border-radius: 3%;
+    border-radius: 10%;
     -webkit-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
     box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
@@ -513,6 +523,9 @@ html{scroll-behavior: smooth;
 }
 #grids_fitoterapia img{
     width: 90%;
+    -webkit-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
 }
 
 #col_fitoterapia {
@@ -527,16 +540,61 @@ html{scroll-behavior: smooth;
     padding: 0 2em;
 }
 
+
+
 /* ****************ESSENTIAN OILS PAG******************* */
-/* #col_essential_oil{
+#col_essential_oil img{
+    width: 57%;
+    -webkit-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    border-radius: 10%;
+}
+
+#col_essential_oil{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    padding: 40px;
+}
 
-} */
+/* ********************SUPPLEMENTATION*********************** */
+#col_supplementation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 40px;
+}
 
+#col_supplementation img{
+    width: 75%;
+    border-radius: 10%;
+    -webkit-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+}
+/* ********************ABOUT US******************************+ */
+#col_about_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 20px;
+}
+#col_about_us img{
+    width: 57%;
+    height: 100%;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 24px -7px rgba(0,0,0,0.75);
+}
 /************************* MEDIA QUERIS ***************************/
 @media screen and (max-width:900px) {
     #wrapper{
