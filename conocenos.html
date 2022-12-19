@@ -8,39 +8,33 @@
         CONÓCENOS
     </title>
     <link rel="shortcut icon" href="./IMAGES/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 <body>
     <section id="fondo">
         <div id="wrapper">
+            <h1 class="main_title">Nat Plants</h1>
             <nav>
-                <!-- aqui va nuestra barra de navegación -->
-                <ul id="cabecera">
-                    <li>
-                        <a href="index.html"> Index </a>
-                    </li>
-                    <li>
-                        <a href="fitoterapia.html"> Phytotherapy </a>
-                    </li>
-                    <li>
-                        <a href="aceites_esenciales.html"> Essential Oils </a>
-                    </li>
-                    <li>
-                        <a href="suplementos.html"> Supplementation </a>
-                    </li>
-                    <li>
-                        <a href="conocenos.html"> About us </a>
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                </ul>
+                <div class="topnav" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div>
+                        <a href="conocenos.html">About us</a>
+                        <a href="suplementos.html">Supplementation</a>
+                        <a href="aceites_esenciales.html">Essential Oils</a>
+                        <a href="fitoterapia.html">Phytotherapy</a>
+                        <a href="index.html">Index</a>
+                    </div>
+                    
+                <!-- el último botón es el icono del menu hamburguesa -->
+                </div>
             </nav>
-            <!-- Aquí aparece lo que va debajo de la barra de navegación -->
         </div>
-    </section>
     <div id="Texto_fitoterapia">
-        <p>ABOUT US</p>
+        <h1>ABOUT US</h1>
+        <p> </p> <br> 
         <p> 
             We love the care and health of the body. Our goal is to teach people about the power of plants that grow in your garden, essential oils that can already be bought almost anywhere, and supplements that we have always heard about but did not know about their great potential.
             Let's begin to take care of ourselves from the inside and from the outside, with scents, plants, supplements and small care that make this life a little healthier and more beautiful.
@@ -60,29 +54,57 @@
             </p>
         </div>
         <div id="col_fitoterapia">
-            <img src="./IMAGES/love.jpg">
+            <img src="./IMAGES/abrazo2.jpg">
             <p>Love Yourselve</p>
             <p>Because as Henry Ford said “Whether you think you can, or you think you can't--you're right.”
             </p>
         </div>
 
     </div>
- <p>PÁGINA DE Conócenos</p>
-<footer>
-    <div>
-        <ul>
-            <li>
-                CONTACTO
-            </li>
-            <li>
-                AVISO LEGAL
-            </li>
-            <li>
-                POLÍTICA DE COOKIES
-            </li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <!-- CONTENEDOR - contacto -->
+        <section id="contacto">
+            <!-- <div class="grid_item">
+                soy el 1
+            </div> -->
+            <div class="grid_item">
+                <ul class="menu_footer">
+                    <li>
+                        <a href="index.html" class="footer_menu_item"> Index </a>
+                    </li>
+                    <li>
+                        <a href="fitoterapia.html"> Phytotherapy </a>
+                    </li>
+                    <li>
+                        <a href="aceites_esenciales.html"> Essential Oils </a>
+                    </li>
+                    <li>
+                        <a href="suplementos.html"> Supplementation </a>
+                    </li>
+                    <li>
+                        <a href="conocenos.html"> About us </a>
+                    </li>
+                    <li>
+                        <a href="conocenos.html"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid_item iconos_redes">
+                <ul class="iconos_footer_redes">
+                    <li><i class="fa fa-facebook fa-1x"></i></li>
+                    <li><i class="fa fa-twitter fa-1x"></i></li>
+                    <li><i class="fa fa-linkedin fa-1x"></i></li>
+                    <li><i class="fa fa-instagram fa-1x"></i></li>
+                </ul>
+            </div>
+        </section>
+            <div class="derechos">
+                © 2022 Nat Plants. Todos los derechos reservados.
+            </div>
+    </footer>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
 </body>
 
 </html>

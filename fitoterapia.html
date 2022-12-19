@@ -1,23 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        FITOTERAPIA
+        PHYTOTHERAPY
     </title>
     <link rel="shortcut icon" href="./IMAGES/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
+
 <body>
-    <section id="fondo">
-        <div id="wrapper">
-            <nav>
-                <!-- aqui va nuestra barra de navegación -->
-                <ul id="cabecera">
+    <div id="wrapper">
+        <h1 class="main_title">Nat Plants</h1>
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div>
+                    <a href="conocenos.html">About us</a>
+                    <a href="suplementos.html">Supplementation</a>
+                    <a href="aceites_esenciales.html">Essential Oils</a>
+                    <a href="fitoterapia.html">Phytotherapy</a>
+                    <a href="index.html">Index</a>
+                </div>
+
+                <!-- el último botón es el icono del menu hamburguesa -->
+            </div>
+        </nav>
+    </div>
+    <div id="Texto_fitoterapia">
+        <h1>MEDICINAL PLANTS</h1><br>
+        <p>
+            Medicinal plants are known worldwide for their natural properties, as they help to alleviate, prevent
+            and treat certain health problems at home. In fact, the World Health Organisation, in its Strategic Plan
+            2014-2023, points out the importance of promoting and including the use of natural medicines in the
+            health systems of its member countries. There are hundreds of medicinal plants that are beneficial to
+            health. Here is a selection of them
+        </p>
+    </div>
+    <div id="grids_fitoterapia">
+        <div id="col_fitoterapia">
+            <img src="./images/lavender.jpg">
+            <p>Lavender</p>
+            <p>Suitable for nervousness, anxiety and insomnia. Also for burns, skin lesions and insect bites.
+            </p>
+        </div>
+        <div id="col_fitoterapia">
+            <img src="./images/calendula.jpg">
+            <p>Calendula</p>
+            <p>Indicated for skin and mucous membrane inflammations, dermatitis, burns, gastroduodenal ulcers and
+                gastritis.
+            </p>
+        </div>
+        <div id="col_fitoterapia">
+            <img src="./images/arnica.jpg">
+            <p>Arnica</p>
+            <p>Indicated for dislocations, bruises, haematomas, muscular or joint disorders, as well as an
+                antiseptic for wounds.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <!-- CONTENEDOR - contacto -->
+        <section id="contacto">
+            <!-- <div class="grid_item">
+            soy el 1
+        </div> -->
+            <div class="grid_item">
+                <ul class="menu_footer">
                     <li>
-                        <a href="index.html"> Index </a>
+                        <a href="index.html" class="footer_menu_item"> Index </a>
                     </li>
                     <li>
                         <a href="fitoterapia.html"> Phytotherapy </a>
@@ -32,57 +91,26 @@
                         <a href="conocenos.html"> About us </a>
                     </li>
                     <li>
-                        Contact
+                        <a href="conocenos.html"> Contact </a>
                     </li>
                 </ul>
-            </nav>
-            <!-- Aquí aparece lo que va debajo de la barra de navegación -->
+            </div>
+            <div class="grid_item iconos_redes">
+                <ul class="iconos_footer_redes">
+                    <li><i class="fa fa-facebook fa-1x"></i></li>
+                    <li><i class="fa fa-twitter fa-1x"></i></li>
+                    <li><i class="fa fa-linkedin fa-1x"></i></li>
+                    <li><i class="fa fa-instagram fa-1x"></i></li>
+                </ul>
+            </div>
+        </section>
+        <div class="derechos">
+            © 2022 Nat Plants. Todos los derechos reservados.
         </div>
-        
-    </section>
-    <div id="Texto_fitoterapia">
-        <p>MEDICINAL PLANTS</p>
-        <p> 
-            Medicinal plants are known worldwide for their natural properties, as they help to alleviate, prevent and treat certain health problems at home. In fact, the World Health Organisation, in its Strategic Plan 2014-2023, points out the importance of promoting and including the use of natural medicines in the health systems of its member countries. There are hundreds of medicinal plants that are beneficial to health. Here is a selection of them
-        </p>
-    </div>
-    <div id="grids_fitoterapia">
-        <div id="col_fitoterapia">
-            <img src="./IMAGES/lavender.jpg">
-            <p>Lavender</p>
-            <p>Suitable for nervousness, anxiety and insomnia. Also for burns, skin lesions and insect bites.
-            </p>
-        </div>
-        <div id="col_fitoterapia">
-            <img src="./IMAGES/calendula.jpg">
-            <p>Calendula</p>
-            <p>Indicated for skin and mucous membrane inflammations, dermatitis, burns, gastroduodenal ulcers and gastritis.
-            </p>
-        </div>
-        <div id="col_fitoterapia">
-            <img src="./IMAGES/arnica.jpg">
-            <p>Arnica</p>
-            <p>Indicated for dislocations, bruises, haematomas, muscular or joint disorders, as well as an antiseptic for wounds.
-            </p>
-        </div>
-
-    </div>
- 
-<footer>
-    <div>
-        <ul>
-            <li>
-                CONTACTO
-            </li>
-            <li>
-                AVISO LEGAL
-            </li>
-            <li>
-                POLÍTICA DE COOKIES
-            </li>
-        </ul>
-    </div>
-</footer>
+    </footer>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
 </body>
 
 </html>

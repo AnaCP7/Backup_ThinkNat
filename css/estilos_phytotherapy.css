@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 3em;
+    background-color: #61d6ab;
+}
+
+#wrapper nav .topnav a.icon {
+    display: none;
+}
+
+#wrapper nav .topnav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+}
+
+#enlaces {
+    display: flex;
+    gap: 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}

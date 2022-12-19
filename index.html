@@ -11,100 +11,97 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./IMAGES/planta_one.jpg">
+    <link rel="shortcut icon" href="./images/apple-touch-icon.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="./CSS/estilos.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
     <section id="fondo">
         <div id="wrapper">
-            <input type="checkbox" id="menu">
-            <label for="menu"> ☰ </label>
-            <!-- MENU HAMBURGUESA-->
-            <ul class="hambuer">
-                <li>
-                    <a href="index.html"> Index </a>
-                </li>
-                <li>
-                    <a href="fitoterapia.html"> Phytoterapy </a>
-                </li>
-                <li>
-                    <a href="aceites_esenciales.html"> Essential Oils </a>
-                </li>
-                <li>
-                    <a href="suplementos.html"> Suplementation </a>
-                </li>
-                <li>
-                    <a href="conocenos.html"> Conócenos </a>
-                </li>
-                <li>
-                    About us
-                </li>
-            </ul>
-            <!-- MENU NORMAL-->
+            <h1 class="main_title"> <a href="index.html"></a> Nat Plants</h1>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div>
+                        <a href="conocenos.html">About us</a>
+                        <a href="suplementos.html">Supplementation</a>
+                        <a href="aceites_esenciales.html">Essential Oils</a>
+                        <a href="fitoterapia.html">Phytotherapy</a>
+                        <a href="index.html">Index</a>
+                    </div>
+                    
+                <!-- el último botón es el icono del menu hamburguesa -->
+                </div>
+            </nav>
+        </div>
 
-            <!-- aqui va nuestra barra de navegación -->
-            <ul id="cabecera">
-                <li>
-                    <a href="index.html"> Index </a>
-                </li>
-                <li>
-                    <a href="fitoterapia.html"> Phytoterapy </a>
-                </li>
-                <li>
-                    <a href="aceites_esenciales.html"> Essential Oils </a>
-                </li>
-                <li>
-                    <a href="suplementos.html"> Suplementation </a>
-                </li>
-                <li>
-                    <a href="conocenos.html"> About us </a>
-                </li>
-                <li>
-                    Contact
-                </li>
-            </ul>
+<!-- *********************************CARRUSEL FOTOS******************************************** -->
+        <div class="slideshow-container">
 
-            <!-- Aquí aparece lo que va debajo de la barra de navegación -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./images/suplementos_vista_aerea_Tam_mediano.jpg" style="width:100%">
+                <!-- <div class="text">Health</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./images/hero_plantas.jpg" style="width:100%">
+                <!-- <div class="text">Beauty</div> -->
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./images/plantas_cuencos_hero1 - copia.jpg" style="width:100%">
+                <!-- <div class="text">Self Care</div> -->
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            <!-- **********************TEXTO BAJO LA HERO SECTION**************************** -->
+            <div id="texto_inicio">
+                <p>
+                    Help your body and mind to restore their state of balance in a natural way by stimulating their self-healing capacity through medicinal plants, supplementation and essential oils. 
+                </p>
+            </div>
         </div>
-        <h1>
-            MECICINAL PLANTS
-        </h1>
-        <div id="imagen_inicio">
-            <img src="./IMAGES/index_hero.jpg" alt="Plantas medicinales">
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
-        <!-- aqui va la imagen horizontal grande y si se puede, hacer un visotr de varias imágenes que vayan pasando -->
-        <div id="texto_inicio">
-            <p>
-                Help your body and mind to restore their state of balance in a natural way by stimulating their self-healing capacity through medicinal plants, supplementation and essential oils. 
-            </p>
-        </div>
+
     </section>
     <section id="inicio_scroll">
         <div class="grid4">
             <div class="col4 img_phytoterapy">
-                <img src="./IMAGES/tarro_aereo_original.jpg">
+                <img src="./images/tarro_aereo_original.jpg">
             </div>
             <div class="col4 title_phytoterapy">
                 <h3> PHYTOTHERAPY</h3>
-                Medicinal plants allow to alleviate symptoms, prevent diseases and restore the state of health.
+                <p>Medicinal plants allow to alleviate symptoms, prevent diseases and restore the state of health.</p>
             </div>
             <div class="col4 title_suplementacion">
                 <h3>SUPPLEMENTATION</h3>
-                The contribution of complementary nutritional substances to the diet (vitamins, minerals, fatty acids,
-                etc.) allows maintaining good health as well as preventing or treating diseases.
+                <p>The contribution of complementary nutritional substances to the diet (vitamins, minerals, fatty acids,
+                etc.) allows maintaining good health as well as preventing or treating diseases.</p>
             </div>
             <div class="col4 img_suplementacion">
-                <img src="./IMAGES/suplementacion_index.jpg">
+                <img src="./images/suplementacion_index.jpg">
             </div>
             <div class="col4 img_aceites">
-                <img src="./IMAGES/aceites_esenciales_plantas.jpg">
+                <img src="./images/aceites_esenciales_plantas.jpg">
             </div>
             <div class="col4 title_aceites">
                 <h3>ESSENTIAL OILS</h3>
-                Aromatherapy is capable of strengthening and activating the self-healing powers of the body, providing
-                balance and harmony to our mind.
+                <p>Aromatherapy is capable of strengthening and activating the self-healing powers of the body, providing
+                    balance and harmony to our mind.</p>
             </div>
         </div>
     </section>
@@ -119,22 +116,22 @@
             <div class="grid_item">
                 <ul class="menu_footer">
                     <li>
-                        <a href="index.html" class="footer_menu_item"> Inicio </a>
+                        <a href="index.html" class="footer_menu_item"> Index </a>
                     </li>
                     <li>
-                        <a href="fitoterapia.html"> Fitoterapia </a>
+                        <a href="fitoterapia.html"> Phytotherapy </a>
                     </li>
                     <li>
-                        <a href="aceites_esenciales.html"> Aceites esenciales </a>
+                        <a href="aceites_esenciales.html"> Essential Oils </a>
                     </li>
                     <li>
-                        <a href="suplementos.html"> Suplementos </a>
+                        <a href="suplementos.html"> Supplementation </a>
                     </li>
                     <li>
-                        <a href="conocenos.html"> Conócenos </a>
+                        <a href="conocenos.html"> About us </a>
                     </li>
                     <li>
-                        Contacto
+                        <a href="conocenos.html"> Contact </a>
                     </li>
                 </ul>
             </div>
@@ -145,27 +142,14 @@
                     <li><i class="fa fa-linkedin fa-1x"></i></li>
                     <li><i class="fa fa-instagram fa-1x"></i></li>
                 </ul>
-                <!-- <a href="#" class="fa fa-facebook icono_item">
-                </a>
-                <a href="#" class="fa fa-twitter icono_item">
-                </a> -->
             </div>
         </section>
-        <!-- *********************MAPA****************************** -->
-        <!-- <div class="grid2">
-        <!-- la primera columna es la que va a contener el maps -->
-        <!-- <div class="col2">
-            <!-- necesito div container -->
-        <!-- <div class="container">
-                <!-- le quito width y height al iframe que traía y le pongo una clase -->
-        <!-- <iframe class= "responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.235406411139!2d-4.761642734774062!3d36.90863557992629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72be51e80ab039%3A0x1e5dd94cbef6d970!2s29552%20El%20Chorro%2C%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1670244783581!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> -->
-        <!-- </iframe> -->
-        <!-- </div> </div> -->
-        <!-- *********************MAPA****************************** -->
-
-
-
+            <div class="derechos">
+                © 2022 Nat Plants. Todos los derechos reservados.
+            </div>
     </footer>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

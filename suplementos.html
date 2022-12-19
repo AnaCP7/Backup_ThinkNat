@@ -5,43 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        SUPLEMENTOS
+        SUPPLEMENTATION
     </title>
     <link rel="shortcut icon" href="./IMAGES/android-chrome-512x512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
 <body>
     <section id="fondo">
         <div id="wrapper">
+            <h1 class="main_title">Nat Plants</h1>
             <nav>
-                <!-- aqui va nuestra barra de navegación -->
-                <ul id="cabecera">
-                    <li>
-                        <a href="index.html"> Index </a>
-                    </li>
-                    <li>
-                        <a href="fitoterapia.html"> Phytotherapy </a>
-                    </li>
-                    <li>
-                        <a href="aceites_esenciales.html"> Essential Oils </a>
-                    </li>
-                    <li>
-                        <a href="suplementos.html"> Supplementation </a>
-                    </li>
-                    <li>
-                        <a href="conocenos.html"> About us </a>
-                    </li>
-                    <li>
-                        Contact
-                    </li>
-                </ul>
+                <div class="topnav" id="myTopnav">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                    <div>
+                        <a href="conocenos.html">About us</a>
+                        <a href="suplementos.html">Supplementation</a>
+                        <a href="aceites_esenciales.html">Essential Oils</a>
+                        <a href="fitoterapia.html">Phytotherapy</a>
+                        <a href="index.html">Index</a>
+                    </div>
+                    
+                <!-- el último botón es el icono del menu hamburguesa -->
+                </div>
             </nav>
-            <!-- Aquí aparece lo que va debajo de la barra de navegación -->
         </div>
         
     </section>
     <div id="Texto_fitoterapia">
-        <p>SUPPLEMENTATION</p>
+        <h1>SUPPLEMENTATION</h1><br>
         <p> 
             Dietary supplements provide vitamins, minerals and other nutrients to the body to balance their levels with those of the food we eat. They have many benefits, such as boosting health and energy, supporting the immune system and reducing the risk of disease, improving physical and mental performance, among others.
         </p>
@@ -73,21 +67,50 @@
         </div>
 
     </div>
-<footer>
-    <div>
-        <ul>
-            <li>
-                CONTACTO
-            </li>
-            <li>
-                AVISO LEGAL
-            </li>
-            <li>
-                POLÍTICA DE COOKIES
-            </li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <!-- CONTENEDOR - contacto -->
+        <section id="contacto">
+            <!-- <div class="grid_item">
+                soy el 1
+            </div> -->
+            <div class="grid_item">
+                <ul class="menu_footer">
+                    <li>
+                        <a href="index.html" class="footer_menu_item"> Index </a>
+                    </li>
+                    <li>
+                        <a href="fitoterapia.html"> Phytotherapy </a>
+                    </li>
+                    <li>
+                        <a href="aceites_esenciales.html"> Essential Oils </a>
+                    </li>
+                    <li>
+                        <a href="suplementos.html"> Supplementation </a>
+                    </li>
+                    <li>
+                        <a href="conocenos.html"> About us </a>
+                    </li>
+                    <li>
+                        <a href="conocenos.html"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid_item iconos_redes">
+                <ul class="iconos_footer_redes">
+                    <li><i class="fa fa-facebook fa-1x"></i></li>
+                    <li><i class="fa fa-twitter fa-1x"></i></li>
+                    <li><i class="fa fa-linkedin fa-1x"></i></li>
+                    <li><i class="fa fa-instagram fa-1x"></i></li>
+                </ul>
+            </div>
+        </section>
+            <div class="derechos">
+                © 2022 Nat Plants. Todos los derechos reservados.
+            </div>
+    </footer>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
 </body>
 
 </html>
