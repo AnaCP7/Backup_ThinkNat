@@ -47,6 +47,7 @@ a:active {color:#948f94;}
     width: 100%;
     padding: 7px;
     margin: 0px;
+    padding-bottom: 15px;
     font-family: "Hind", Sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -63,7 +64,7 @@ a:active {color:#948f94;}
 /****************MENU HAMBURGUESA***************+*****/
 
 .main_title{
-    /* position:absolute; */
+    position:absolute;
     left: 0;
     top: 0;
     padding-top: 20px;
